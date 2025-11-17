@@ -15,7 +15,7 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 
 @Entity
-public class Beds {
+public class Bed {
 
 	
 	
