@@ -17,8 +17,7 @@ import jakarta.persistence.OneToMany;
 @Entity
 public class Bed {
 
-	
-	
+		
 	
 	 
 	
@@ -39,6 +38,15 @@ public class Bed {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "room_id", nullable = false)
     private Room room;
+
+    private String bedType ;
+	public String getBedType() {
+		return bedType;
+	}
+
+	public void setBedType(String bedType) {
+		this.bedType = bedType;
+	}
 
 	public Long getId() {
 		return id;
@@ -81,9 +89,11 @@ public class Bed {
 	}
     
      
-
+	
     
     
 }
+
+
 
 
